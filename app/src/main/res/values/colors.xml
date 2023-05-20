@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="lightPrimaryColor">#FFFFFF</color>
+    <color name="lightPrimaryDarkColor">#CCCCCC</color>
+    <color name="lightAccentColor">#FF4081</color>
+    <color name="lightTextColorPrimary">#212121</color>
+    <color name="lightTextColorSecondary">#757575</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="darkPrimaryColor">#333333</color>
+    <color name="darkPrimaryDarkColor">#000000</color>
+    <color name="darkAccentColor">#FF4081</color>
+    <color name="darkTextColorPrimary">#FFFFFF</color>
+    <color name="darkTextColorSecondary">#CCCCCC</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#CCCCCC</color>
+</resources>
