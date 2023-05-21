@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_input"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="?android:colorPrimary"
-        android:textSize="48dp"
+        android:background="@drawable/border_bg"
+        android:layout_margin="4dp"
+        android:textSize="48sp"
         android:maxLength="12"
         android:padding="10dp"
-        android:text="0"
-        android:gravity="right|center_vertical|bottom"
+        android:text="@string/_0"
+        android:gravity="end|center_vertical|bottom"
         />
     <!-- row 1 -->
     <LinearLayout
@@ -33,17 +32,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="7"
+            android:text="@string/_7"
             android:onClick="onDigit"
             android:layout_margin="2dp"
-            />
+            tools:ignore="NestedWeights" />
 
         <ph.jamesdev.calculatorapp.CustomButton
             android:id="@+id/btn_eight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="8"
+            android:text="@string/_8"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -53,7 +52,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="9"
+            android:text="@string/_9"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -63,7 +62,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="/"
+            android:text="@string/slash"
             android:onClick="onOperator"
             android:layout_margin="2dp"
             />
@@ -84,17 +83,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="4"
+            android:text="@string/_4"
             android:onClick="onDigit"
             android:layout_margin="2dp"
-            />
+            tools:ignore="NestedWeights" />
 
         <ph.jamesdev.calculatorapp.CustomButton
             android:id="@+id/btn_five"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="5"
+            android:text="@string/_5"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -104,7 +103,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="6"
+            android:text="@string/_6"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -114,7 +113,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="*"
+            android:text="@string/asterisk"
             android:onClick="onOperator"
             android:layout_margin="2dp"
             />
@@ -135,17 +134,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="1"
+            android:text="@string/_1"
             android:onClick="onDigit"
             android:layout_margin="2dp"
-            />
+            tools:ignore="NestedWeights" />
 
         <ph.jamesdev.calculatorapp.CustomButton
             android:id="@+id/btn_two"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2"
+            android:text="@string/_2"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -155,7 +154,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="3"
+            android:text="@string/_3"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -165,7 +164,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-"
+            android:text="@string/minus_sign"
             android:onClick="onOperator"
             android:layout_margin="2dp"
             />
@@ -186,17 +185,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="."
+            android:text="@string/decimal"
             android:onClick="onDecimalPoint"
             android:layout_margin="2dp"
-            />
+            tools:ignore="NestedWeights" />
 
         <ph.jamesdev.calculatorapp.CustomButton
             android:id="@+id/btn_zero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0"
+            android:text="@string/_0"
             android:onClick="onDigit"
             android:layout_margin="2dp"
             />
@@ -206,7 +205,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="CLR"
+            android:text="@string/clear"
             android:onClick="onClear"
             android:layout_margin="2dp"
             />
@@ -216,7 +215,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+"
+            android:text="@string/plus_sign"
             android:onClick="onOperator"
             android:layout_margin="2dp"
             />
@@ -237,7 +236,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="onEqual"
-            android:text="="
+            android:text="@string/equal_sign"
             android:layout_margin="2dp"
             />
 
