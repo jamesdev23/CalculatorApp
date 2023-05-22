@@ -6,7 +6,6 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.AppCompatButton
-import android.view.ViewGroup.MarginLayoutParams
 
 
 class CustomButton : AppCompatButton {
@@ -25,7 +24,7 @@ class CustomButton : AppCompatButton {
 
     private fun applyCustomStyle() {
 
-        val backgroundDrawable: Drawable? = AppCompatResources.getDrawable(context, R.drawable.custom_button_background)
+        val backgroundDrawable: Drawable? = AppCompatResources.getDrawable(context, R.drawable.custom_button_bg)
         background = backgroundDrawable
 
         val textSize = resources.getDimensionPixelSize(R.dimen.custom_button_text_size).toFloat()
